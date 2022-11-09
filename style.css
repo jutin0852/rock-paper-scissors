@@ -1,7 +1,8 @@
 *{
     padding: 0%;
     margin: 0;
-    font-Family: 'Barlow Semi Condensed',sans-serif
+    font-Family: 'Barlow Semi Condensed',sans-serif;
+    
 }
 @media screen and (min-width:300px) {
     body{
@@ -28,7 +29,7 @@
         font-weight: 900;
     }
     #head-line{
-        outline:3px solid hsl(217, 16%, 45%);
+        border:3px solid hsl(217, 16%, 45%);
         padding: 10px 20px;
         border-radius:10px ;
         margin: 30px auto ;
@@ -94,7 +95,7 @@
         padding: 5px 10px;
         border-radius: 5px;
         color: white;
-        margin-top: 150px;
+        margin-top: 120px;
         cursor: pointer;
     }
     #rules{
@@ -168,7 +169,7 @@
         height: 40px;
         width: 40px;
           
-        margin: 20px 30px;
+        margin: 20px 20px;
     }
     .picked p{
         margin: 40px 0px 60px 0px;
@@ -179,7 +180,7 @@
         margin: 60px 20px 0px 20px;
         display: none;
         position:absolute;
-        top: 350px;
+        top: 380px;
 
     
     }
@@ -210,7 +211,7 @@
         height: 25px;
         width: 25px;
         border-radius: 50%;
-        margin: 60px 30px;
+        margin: 80px 50px;
         padding: 30px;
         
     
