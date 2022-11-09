@@ -7,6 +7,7 @@
     body{
         background-color:  hsl(214, 47%, 23%);
         margin: 10px;
+        overflow: hidden;
          
     }
     
@@ -39,7 +40,7 @@
         margin-top: 10px;
     }
     #triangle{
-        margin: 150px 0px 0px 250px ;
+        margin: 150px 0px 0px 340px ;
         height:160px;
         
     }
@@ -51,39 +52,39 @@
     }
     #paper{
         position: relative;
-        right: 195px ;
+        right: 215px ;
         bottom: 5px;
         background-color:  white;
         padding: 20px;
         border-radius: 50%;
         height: 40px;
         width: 40px;
-        outline: 18px solid  hsl(230, 89%, 65%);
+        border: 18px solid  hsl(230, 89%, 65%);
         
     
     }
     #scissors{
         position: relative;
-        right: 135px ;
+        right: 180px ;
         bottom: 5px;
         background-color:  white;
         padding: 20px;
         border-radius: 50%;
         height: 40px;
         width: 40px;
-        outline: 18px solid  hsl(40, 84%, 53%);
+        border: 18px solid  hsl(40, 84%, 53%);
         
     }
     #rock{
         position: relative;
-        right: 280px ;
+        right: 365px ;
         top: 140px;
         background-color:  white;
         padding: 20px;
         border-radius: 50%;
         height: 40px;
         width: 40px;
-        outline: 18px solid  hsl(349, 70%, 56%);
+        border: 18px solid  hsl(349, 70%, 56%);
         
         
     }
@@ -127,7 +128,7 @@
         color:grey  ;
         position: absolute;
         top: 185px;
-        right: 30px;
+        right: 50px;
         font-size: 35px;
         font-weight: bold;
         cursor: pointer;
@@ -136,7 +137,7 @@
         position: absolute;
         color:hsl(214, 47%, 23%) ;
         top: 190px;
-        left: 30px;
+        left: 50px;
         font-size: 20px;
         font-weight: bold;
       }
@@ -196,13 +197,13 @@
         font-size: large;
     }
     .scissors{
-        outline: 20px solid hsl(40, 84%, 53%);
+        border: 20px solid hsl(40, 84%, 53%);
     }
     .rock{
-        outline: 20px solid  hsl(349, 70%, 56%);
+        border: 20px solid  hsl(349, 70%, 56%);
     }
     .paper{
-        outline: 20px solid hsl(230, 89%, 65%)  ;
+        border: 20px solid hsl(230, 89%, 65%)  ;
     }
     #blank{
         background-color: hsl(237, 49%, 15%);
@@ -221,6 +222,7 @@
     body{
         background-color:  hsl(214, 47%, 23%);
         margin: 20px;
+        overflow: hidden;
         
        
     }
@@ -254,7 +256,7 @@
         margin-top: 10px;
     }
     #triangle{
-        margin: 150px 0px 0px 310px ;
+        margin: 150px 0px 0px 390px ;
         height:200px;
         
     }
@@ -273,32 +275,32 @@
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        outline: 18px solid  hsl(230, 89%, 65%);
+        border: 18px solid  hsl(230, 89%, 65%);
         
     
     }
     #scissors{
         position: relative;
-        right: 160px ;
+        right: 230px ;
         bottom: 20px;
         background-color:  white;
         padding: 30px;
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        outline: 18px solid  hsl(40, 84%, 53%);
+        border: 18px solid  hsl(40, 84%, 53%);
         
     }
     #rock{
         position: relative;
-        right: 380px ;
+        right: 470px ;
         top: 160px;
         background-color:  white;
         padding: 30px;
         border-radius: 50%;
         height: 50px;
         width: 50px;
-        outline: 18px solid  hsl(349, 70%, 56%);
+        border: 18px solid  hsl(349, 70%, 56%);
         
         
     }
@@ -409,13 +411,13 @@
         font-size: large;
     }
     .scissors{
-        outline: 30px solid hsl(40, 84%, 53%);
+        border: 30px solid hsl(40, 84%, 53%);
     }
     .rock{
-        outline: 30px solid  hsl(349, 70%, 56%);
+        border: 30px solid  hsl(349, 70%, 56%);
     }
     .paper{
-        outline: 30px solid hsl(230, 89%, 65%)  ;
+        border: 30px solid hsl(230, 89%, 65%)  ;
     }
     #blank{
         background-color: hsl(237, 49%, 15%);
