@@ -3,216 +3,430 @@
     margin: 0;
     font-Family: 'Barlow Semi Condensed',sans-serif
 }
-body{
-    background-color:  hsl(214, 47%, 23%);
-    margin: 20px;
+@media screen and (min-width:300px) {
+    body{
+        background-color:  hsl(214, 47%, 23%);
+        margin: 10px;
+         
+    }
     
    
-}
-
-#back{
+    #score{
+        background-color: white;
+        padding: 7px 15px;
+        float: right;
+        text-align: center;
+        border-radius: 5px;
+        color: hsl(229, 64%, 46%);
+        /* font-weight:lighter; */
+        font-size: 0.9em;
+    }
+    #scorenum{
+        color: hsl(229, 25%, 31%);
+        font-size: 2.0em;
+        font-weight: 900;
+    }
+    #head-line{
+        outline:3px solid hsl(217, 16%, 45%);
+        padding: 10px 20px;
+        border-radius:10px ;
+        margin: 30px auto ;
+        width: 280px;
+    }
+    #logo{
+        height: 60px;
+        margin-right: 100px;
+        margin-top: 10px;
+    }
+    #triangle{
+        margin: 150px 0px 0px 250px ;
+        height:160px;
+        
+    }
+    #tri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display: none; */
+    }
+    #paper{
+        position: relative;
+        right: 195px ;
+        bottom: 5px;
+        background-color:  white;
+        padding: 20px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        outline: 18px solid  hsl(230, 89%, 65%);
+        
     
-    /* margin: 10px auto ; */
-    /* text-align: center; */
-
-   
-}
-#score{
-    background-color: white;
-    padding: 10px 30px;
-    float: right;
-    text-align: center;
-    border-radius: 5px;
-    color: hsl(229, 64%, 46%);
-    /* font-weight:lighter; */
-    font-size: 0.9em;
-}
-#scorenum{
-    color: hsl(229, 25%, 31%);
-    font-size: 3.0em;
-    font-weight: 900;
-}
-#head-line{
-    outline:3px solid hsl(217, 16%, 45%);
-    padding: 10px 20px;
-    border-radius:10px ;
-    margin: 30px auto ;
-    width: 550px;
-}
-#logo{
-    height: 80px;
-    margin-right: 300px;
-    margin-top: 10px;
-}
-#triangle{
-    margin: 150px 0px 0px 310px ;
-    height:200px;
-    
-}
-#tri{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: none; */
-}
-#paper{
-    position: relative;
-    right: 270px ;
-    bottom: 20px;
-    background-color:  white;
-    padding: 30px;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    outline: 18px solid  hsl(230, 89%, 65%);
-    
-
-}
-#scissors{
-    position: relative;
-    right: 160px ;
-    bottom: 20px;
-    background-color:  white;
-    padding: 30px;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    outline: 18px solid  hsl(40, 84%, 53%);
-    
-}
-#rock{
-    position: relative;
-    right: 380px ;
-    top: 160px;
-    background-color:  white;
-    padding: 30px;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    outline: 18px solid  hsl(349, 70%, 56%);
-    
-    
-}
-#rulesbtn{
-    float: right;
-    outline: 2px solid white ;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: white;
-    margin-top: 130px;
-    cursor: pointer;
-}
-#rules{
-    background-color: white;
-    padding: 100px 10px 10px 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: 170px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    }
+    #scissors{
+        position: relative;
+        right: 135px ;
+        bottom: 5px;
+        background-color:  white;
+        padding: 20px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        outline: 18px solid  hsl(40, 84%, 53%);
+        
+    }
+    #rock{
+        position: relative;
+        right: 280px ;
+        top: 140px;
+        background-color:  white;
+        padding: 20px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        outline: 18px solid  hsl(349, 70%, 56%);
+        
+        
+    }
+    #rulesbtn{
+        float: right;
+        outline: 2px solid white ;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        margin-top: 150px;
+        cursor: pointer;
+    }
+    #rules{
+        background-color: white;
+        padding: 100px 10px 10px 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+        
+    }
+    #rulesback{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: hsl(220, 13%, 13%,0.9);
+     
+    }
+    .close {
+        color:grey  ;
+        position: absolute;
+        top: 185px;
+        right: 30px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    .rule{
+        position: absolute;
+        color:hsl(214, 47%, 23%) ;
+        top: 190px;
+        left: 30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    #game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
     
     
-    
-}
-#rulesback{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: hsl(220, 13%, 13%,0.9);
- 
-}
-.close {
-    color:grey  ;
-    position: absolute;
-    top: 185px;
-    right: 630px;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-.rule{
-    position: absolute;
-    color:hsl(214, 47%, 23%) ;
-    top: 190px;
-    left: 630px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-#game{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-
-
-}
-#game p{
-    color: white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.picked{
-    display: inline-block;
-    width: 350px;
-    text-align: center;
-}
-.picked img{
-    background-color:  white;
-    padding: 60px;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    }
+    #game p{
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.7em;
+    }
+    .picked{
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+    }
+    .picked img{
+        background-color:  white;
+        padding: 30px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+          
+        margin: 20px 30px;
+    }
+    .picked p{
+        margin: 40px 0px 60px 0px;
       
-    margin: 20px 40px;
-}
-.picked p{
-    margin: 40px 0px 60px 0px;
-  
-}
-#PA{
-    text-align: center;
-    margin: 60px 20px 0px 20px;
-    display: none;
+    }
+    #PA{
+        text-align: center;
+        margin: 60px 20px 0px 20px;
+        display: none;
+        position:absolute;
+        top: 350px;
 
-}
-#PA p{
-   margin-bottom: 20px;
-
-}
-#PAbtn{
-    background-color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 15px 50px;
-    border-radius:10px ;
-    font-weight: bold;
-    font-size: large;
-}
-.scissors{
-    outline: 30px solid hsl(40, 84%, 53%);
-}
-.rock{
-    outline: 30px solid  hsl(349, 70%, 56%);
-}
-.paper{
-    outline: 30px solid hsl(230, 89%, 65%)  ;
-}
-#blank{
-    background-color: hsl(237, 49%, 15%);
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    margin: 95px 90px;
-    padding: 60px;
     
-
+    }
+    #PA p{
+       margin-bottom: 20px;
+    
+    }
+    #PAbtn{
+        background-color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 15px 50px;
+        border-radius:10px ;
+        font-weight: bold;
+        font-size: large;
+    }
+    .scissors{
+        outline: 20px solid hsl(40, 84%, 53%);
+    }
+    .rock{
+        outline: 20px solid  hsl(349, 70%, 56%);
+    }
+    .paper{
+        outline: 20px solid hsl(230, 89%, 65%)  ;
+    }
+    #blank{
+        background-color: hsl(237, 49%, 15%);
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        margin: 60px 30px;
+        padding: 30px;
+        
+    
+    }
+    
+    
+}
+@media screen and (min-width:800px) {
+    body{
+        background-color:  hsl(214, 47%, 23%);
+        margin: 20px;
+        
+       
+    }
+    
+    
+    #score{
+        background-color: white;
+        padding: 10px 30px;
+        float: right;
+        text-align: center;
+        border-radius: 5px;
+        color: hsl(229, 64%, 46%);
+        /* font-weight:lighter; */
+        font-size: 0.9em;
+    }
+    #scorenum{
+        color: hsl(229, 25%, 31%);
+        font-size: 3.0em;
+        font-weight: 900;
+    }
+    #head-line{
+        outline:3px solid hsl(217, 16%, 45%);
+        padding: 10px 20px;
+        border-radius:10px ;
+        margin: 30px auto ;
+        width: 550px;
+    }
+    #logo{
+        height: 80px;
+        margin-right: 300px;
+        margin-top: 10px;
+    }
+    #triangle{
+        margin: 150px 0px 0px 310px ;
+        height:200px;
+        
+    }
+    #tri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display: none; */
+    }
+    #paper{
+        position: relative;
+        right: 270px ;
+        bottom: 20px;
+        background-color:  white;
+        padding: 30px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        outline: 18px solid  hsl(230, 89%, 65%);
+        
+    
+    }
+    #scissors{
+        position: relative;
+        right: 160px ;
+        bottom: 20px;
+        background-color:  white;
+        padding: 30px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        outline: 18px solid  hsl(40, 84%, 53%);
+        
+    }
+    #rock{
+        position: relative;
+        right: 380px ;
+        top: 160px;
+        background-color:  white;
+        padding: 30px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        outline: 18px solid  hsl(349, 70%, 56%);
+        
+        
+    }
+    #rulesbtn{
+        float: right;
+        outline: 2px solid white ;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: white;
+        margin-top: 60px;
+        cursor: pointer;
+    }
+    #rules{
+        background-color: white;
+        padding: 100px 10px 10px 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+        
+    }
+    #rulesback{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: hsl(220, 13%, 13%,0.9);
+     
+    }
+    .close {
+        color:grey  ;
+        position: absolute;
+        top: 185px;
+        right: 630px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    .rule{
+        position: absolute;
+        color:hsl(214, 47%, 23%) ;
+        top: 190px;
+        left: 630px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    #game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    
+    
+    }
+    #game p{
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: initial;
+    }
+    .picked{
+        display: inline-block;
+        width: 350px;
+        text-align: center;
+    }
+    .picked img{
+        background-color:  white;
+        padding: 60px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+          
+        margin: 20px 40px;
+    }
+    .picked p{
+        margin: 40px 0px 60px 0px;
+      
+    }
+    #PA{
+        text-align: center;
+        margin: 60px 20px 0px 20px;
+        display: none;
+        position: unset;
+    
+    }
+    #PA p{
+       margin-bottom: 20px;
+    
+    }
+    #PAbtn{
+        background-color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 15px 50px;
+        border-radius:10px ;
+        font-weight: bold;
+        font-size: large;
+    }
+    .scissors{
+        outline: 30px solid hsl(40, 84%, 53%);
+    }
+    .rock{
+        outline: 30px solid  hsl(349, 70%, 56%);
+    }
+    .paper{
+        outline: 30px solid hsl(230, 89%, 65%)  ;
+    }
+    #blank{
+        background-color: hsl(237, 49%, 15%);
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        margin: 95px 90px;
+        padding: 60px;
+        
+    
+    }
+    
+    
 }
