@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="back">
+        <div id="head-line">
+            <img id="logo" src="/images/logo.svg" alt="rock">
+            <span id="score">SCORE <div id="scorenum" >0</div></span>
+        </div>
+        <div onclick="choose()" id="tri">
+            <img id="triangle" src="/images/bg-triangle.svg" alt="">
+            <img id="paper" src="/images/icon-paper.svg" alt="">
+            <img id="scissors" src="/images/icon-scissors.svg" alt="">
+            <img id="rock" src="/images/icon-rock.svg" alt="">
+            
+        </div>
+
+        <div id="game">
+            <div id="player" class="picked">
+                <p>you picked</p>
+                
+            </div>
+            <div id="PA">
+                <p>you lose</p>
+                <button onclick="playAgain()" id="PAbtn">play again</button>
+            </div>
+            <div id="house" class="picked">
+                <p>the house picked</p>
+                <div id="blank"></div>
+            </div>
+        </div>
+
+
+        <div  onclick="rules()"id="rulesbtn">RULES</div>
+    </div >
+
+
+    <div id="rulesback">
+        <img id="rules"  src="/images/image-rules.svg" alt="">;
+        <span class="close cursor" onclick="closeModal()">&times;</span>;
+
+        <span  class="rule">Rules</span>
+        
+      
+    </div>
+    
+   
+    
+</body>
+<script src="/script.js"></script>
+</html>
